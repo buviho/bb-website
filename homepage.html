@@ -39,11 +39,11 @@
     <div id="sideNav">
         <nav>
             <ul>
-                <li><a data-scroll href='#banner'>HOME</a></li>
-                <li><a data-scroll href='#aboutUs'>ABOUT US</a></li>
-                <li><a data-scroll href='#pictures'>PICTURES</a></li>
-                <li><a data-scroll href='#people'>PEOPLE</a></li>
-                <li><a data-scroll href='#footer'>CONTACT US</a></li>
+                <li><a data-scroll href="#banner">HOME</a></li>
+                <li><a data-scroll href="#aboutUs">ABOUT US</a></li>
+                <li><a data-scroll href="#pictures">PICTURES</a></li>
+                <li><a data-scroll href="#people">PEOPLE</a></li>
+                <li><a data-scroll href="#footer">CONTACT US</a></li>
             </ul>
         </nav>
     </div>
@@ -231,11 +231,6 @@
         var menuBtn = document.getElementById("menuBtn");
         var sideNav = document.getElementById("sideNav");
         var menu = document.getElementById("menu");
-        var banner = document.getElementById("banner");
-        var aboutUs = document.getElementById("aboutUs");
-        var pictures = document.getElementById("pictures");
-        var people = document.getElementById("people");
-        var footer = document.getElementById("footer");
 
         menuBtn.onclick = function () {
             const style = getComputedStyle(sideNav).right;
@@ -248,11 +243,6 @@
             }
         }
        
-
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 100,
-            speedAsDuration: true
-        });
     </script>
 </body>
 </html>
